@@ -1,5 +1,6 @@
 ﻿using Integration.Common;
 using Integration.Backend;
+using System.Collections.Concurrent;
 
 namespace Integration.Service;
 
@@ -15,7 +16,7 @@ public sealed class ItemIntegrationService
     public Result SaveItem(string itemContent)
     {
         // Check the backend to see if the content is already saved.
-        if (ItemIntegrationBackend.FindItemsWithContent(itemContent).Count != 0)
+        if (!ItemIntegrationBackend.TryAddItem(new Item { Content = itemContent }))
         {
             return new Result(false, $"Duplicate item received with content {itemContent}.");
         }

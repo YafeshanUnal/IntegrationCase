@@ -6,6 +6,8 @@ namespace Integration.Backend;
 public sealed class ItemOperationBackend
 {
     private ConcurrentBag<Item> SavedItems { get; set; } = new();
+    private ConcurrentDictionary<string, Item> _items = new ConcurrentDictionary<string, Item>();
+
     private int _identitySequence;
 
     public Item SaveItem(string itemContent)
@@ -13,7 +15,7 @@ public sealed class ItemOperationBackend
         // This simulates how long it takes to save
         // the item content. Forty seconds, give or take.
         Thread.Sleep(2_000);
-        
+
         var item = new Item();
         item.Content = itemContent;
         item.Id = GetNextIdentity();
@@ -22,6 +24,10 @@ public sealed class ItemOperationBackend
         return item;
     }
 
+    public bool TryAddItem(Item item)
+    {
+        return _items.TryAdd(item.Content, item);
+    }
     public List<Item> FindItemsWithContent(string itemContent)
     {
         return SavedItems.Where(x => x.Content == itemContent).ToList();

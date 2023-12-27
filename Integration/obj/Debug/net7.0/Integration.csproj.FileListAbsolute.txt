@@ -1,0 +1,15 @@
+D:\IntegrationCase\Integration\bin\Debug\net7.0\Integration.exe
+D:\IntegrationCase\Integration\bin\Debug\net7.0\Integration.deps.json
+D:\IntegrationCase\Integration\bin\Debug\net7.0\Integration.runtimeconfig.json
+D:\IntegrationCase\Integration\bin\Debug\net7.0\Integration.dll
+D:\IntegrationCase\Integration\bin\Debug\net7.0\Integration.pdb
+D:\IntegrationCase\Integration\obj\Debug\net7.0\Integration.GeneratedMSBuildEditorConfig.editorconfig
+D:\IntegrationCase\Integration\obj\Debug\net7.0\Integration.AssemblyInfoInputs.cache
+D:\IntegrationCase\Integration\obj\Debug\net7.0\Integration.AssemblyInfo.cs
+D:\IntegrationCase\Integration\obj\Debug\net7.0\Integration.csproj.CoreCompileInputs.cache
+D:\IntegrationCase\Integration\obj\Debug\net7.0\Integration.sourcelink.json
+D:\IntegrationCase\Integration\obj\Debug\net7.0\Integration.dll
+D:\IntegrationCase\Integration\obj\Debug\net7.0\refint\Integration.dll
+D:\IntegrationCase\Integration\obj\Debug\net7.0\Integration.pdb
+D:\IntegrationCase\Integration\obj\Debug\net7.0\Integration.genruntimeconfig.cache
+D:\IntegrationCase\Integration\obj\Debug\net7.0\ref\Integration.dll
